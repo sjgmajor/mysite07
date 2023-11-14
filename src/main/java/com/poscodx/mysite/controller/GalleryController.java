@@ -42,6 +42,7 @@ public class GalleryController {
 		return ResponseEntity.status(HttpStatus.OK).body(JsonResult.success(galleyVo));
 	}
 	
+	
 	@DeleteMapping(value="/{no}")
 	public ResponseEntity<JsonResult> delete(@PathVariable("no") Long no) {
 		galleryService.deleteGalleryImage(no);
